@@ -10,4 +10,11 @@ Extract the downloaded plugin .zip into the plugins folder of your CKEditor inst
 
 Enable the plugin by using the extraPlugins configuration setting. Example:
 
-`config.extraPlugins = 'fontawesome';`
+```javascript
+
+config.extraPlugins = 'fontawesome';
+config.contentsCss = [
+		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'
+	];
+	
+```
