@@ -10,14 +10,14 @@ CKEDITOR.dialog.add('fontawesomeDialog', function (editor) {
 						type : 'select',
 						id : 'fontsize',
 						label : editor.lang.fontawesome.fontsize,
-						items:[['8', '8'], ['9', '9'], ['10', '10'], ['11', '11'], ['12', '12'], ['14', '14'], ['16', '16'], ['18', '18'], ['20', '20'], ['22', '22'], ['24', '24'], ['28', '28'], ['36', '36'], ['48', '48'], ['72', '72']],
+						items : [['8', '8'], ['9', '9'], ['10', '10'], ['11', '11'], ['12', '12'], ['14', '14'], ['16', '16'], ['18', '18'], ['20', '20'], ['22', '22'], ['24', '24'], ['28', '28'], ['36', '36'], ['48', '48'], ['72', '72']],
 						setup : function (element) {
 							this.setValue(element.getStyle('font-size').replace('px', ''));
 						},
 						commit : function (element) {
 							var style = this.getValue();
 							if (style) {
-								element.setStyle('font-size', style +  'px');
+								element.setStyle('font-size', style + 'px');
 							} else {
 								element.removeStyle('font-size');
 							}
@@ -43,17 +43,17 @@ CKEDITOR.dialog.add('fontawesomeDialog', function (editor) {
 						label : '',
 						html : editor.lang.fontawesome.facode_tip
 					}, {
-						id: 'facolor',
-						type:'text',
-						label:editor.lang.fontawesome.facolor,
-						setup:function(element){
+						id : 'facolor',
+						type : 'text',
+						label : editor.lang.fontawesome.facolor,
+						setup : function (element) {
 							this.setValue(element.getStyle('color'));
 						},
-						commit:function(element){
+						commit : function (element) {
 							var color1 = this.getValue();
-							if(color1){
+							if (color1) {
 								element.setStyle('color', color1);
-							}else{
+							} else {
 								element.removeStyle('color');
 							}
 						}

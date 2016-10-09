@@ -1,6 +1,10 @@
 # ckeditor-fontawesome-plugin
 ckeditor fontawesome plugin
 
+# screenshot
+
+![image](https://github.com/chaegumi/ckeditor-fontawesome-plugin/raw/master/screenshot/fontawesome.jpg)
+
 # Add-on Installation Instructions
 If you want to add the plugin manually, you will need to:
 
